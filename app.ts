@@ -20,3 +20,13 @@ const newObj:NewObj = {
 type NewObj = Obj & {
     lastName: string;
 }
+
+const secondObj:SecondObj = {
+    ...obj,
+    ...newObj,
+}
+
+console.log(secondObj);
+
+
+type SecondObj = Obj;
